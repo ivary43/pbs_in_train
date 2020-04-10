@@ -1,9 +1,8 @@
-mavenJob('pbs_build_print') {
-    logRotator(-1, 10)
-    jdk('Java 8')
+job('pbs_build_print') {
     scm {
         github('ivary43/pbs_in_train', 'week_one')
     }
+    
     triggers {
        	scm('0 0 10 * * ?')
     }
