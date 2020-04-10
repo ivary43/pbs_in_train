@@ -10,7 +10,11 @@ job('pbs_build_print') {
     steps {
         shell("mvn clean")
         shell("mvn package")
-        shell("cd target/")
-        shell("java -jar pbs-0.0.1.jar")
+        dir("target") {
+            sh "pwd"
+            shell("java -jar pbs-0.0.1.jar")
+        }
+
+        
     }
 }
