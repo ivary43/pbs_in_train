@@ -4,7 +4,7 @@ job('pbs_build_print') {
     }
     
     triggers {
-       	scm('0 0 10 * * ?')
+       	scm('0 * * ? * *')
     }
 
     steps {
