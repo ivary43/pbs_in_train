@@ -8,13 +8,8 @@ job('pbs_build_print') {
     }
 
     steps {
-        shell("mvn clean")
-        shell("mvn package")
-        dir("target") {
-            sh "pwd"
-            shell("java -jar pbs-0.0.1.jar")
-        }
-
-        
+        sh 'mvn clean'
+        sh 'mvn package'
+        sh 'java -jar target/pbs-0.0.1.jar'
     }
 }
