@@ -8,9 +8,6 @@ job('pbs_build_print') {
     }
 
     steps {
-    	shell("pwd")
-        shell("cd pbs/")
-        shell("pwd")
         shell("mvn clean")
         shell("mvn package")
         shell("cd target/")
