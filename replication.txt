@@ -1,0 +1,6 @@
+mkdir -p data/rs1 data/rs2 data/rs3
+mongod --replSet rs1 --logpath "1.log" --dbpath ./rs1 --port 27017 --fork
+mongod --replSet rs1 --logpath "2.log" --dbpath ./rs2 --port 27018 --fork
+mongod --replSet rs1 --logpath "3.log" --dbpath ./rs3 --port 27019 --fork
+
+mongo --port 27018 < init_replica_pablo.js
