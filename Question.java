@@ -2,7 +2,6 @@ import java.util.*;
 
 class Question{
 
-    // Private variables
     private String question;
     private String opt1, opt2, opt3, opt4;
     private String answer;
