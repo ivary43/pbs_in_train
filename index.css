@@ -1,0 +1,30 @@
+
+#p_selector {
+    color: brown;
+}
+
+@media (width: 786px) and (height: 600px) {
+    #p_selector {
+        color: blue;
+        font-family: Arial;
+        font-size: 36pt;
+    }
+}
+
+
+@media (width: 300px) and (height: 350px) {
+    #p_selector {
+        color: red;
+        font-family: Helvetica;
+        font-size: 24pt;
+    }
+}
+
+
+@media screen and (width: 100px) and (height: 100px) {
+    #p_selector {
+        color: purple;
+        font-family: Courier;
+        font-size: 18pt;
+    }
+}

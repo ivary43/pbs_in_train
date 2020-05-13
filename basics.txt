@@ -1,0 +1,61 @@
+block elements tag - p, h1-h6 
+inline elemnts tag - b, strong , abbr, i , em
+
+unordered_list 
+ordered_list
+li list item
+dl definiton list
+
+dd(definition) and dt(terms)   -- key value pair
+
+
+-- text elements 
+-- list 
+-- container 
+
+Group elements in container - 
+
+nav - navigation 
+header , footer
+main
+article 
+section 
+aside -- not realated to the article 
+div -- last resort for a container 
+
+
+Images and video in html 
+
+<img alt-- alternative text srcset- allows different imaages for different device dimensions >
+
+
+The below is a container 
+<figure> 
+
+<figcaption>
+
+</figcaption>
+
+</figure>
+
+
+<video>
+
+<source src = "" type="video/mp4">
+<source src = "" type="video/webem">
+
+</video>
+
+
+table -
+	caption
+	thead 
+	table row tr
+		table description td
+
+
+#id - for unique selector 
+.class - for class selector 
+nav li -- to use li descsendant of a nav as target
+child selcetor - nav>li -- the greater symbol reperesents direct child of nav
+
